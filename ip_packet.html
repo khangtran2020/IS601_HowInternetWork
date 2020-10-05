@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>History of Internet</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">IS601 HISTORY OF INTERNET</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li>
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownHistory" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Internet
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="history.html">History</a>
+                    <a class="dropdown-item" href="browser.html">Browser War</a>
+                    <a class="dropdown-item" href="search.html">Internet Search</a>
+                    <a class="dropdown-item" href="dotcom.html">Dot Com Bubble</a>
+                    <a class="dropdown-item" href="peoplepower.html">People Power</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownHow" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    How it works
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="domain_icann.html">Domain names and ICANN</a>
+                    <a class="dropdown-item" href="ip_packet.html">IP Addresses, Packets and Routing</a>
+                    <a class="dropdown-item" href="dns.html">DNS</a>
+                    <a class="dropdown-item" href="http_https.html">HTTP and HTTPS protocols</a>
+                    <a class="dropdown-item" href="w3c_html_css.html">W3C and HTML and CSS</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<div class="container">
+
+    <!-- ====================================================================================================================================-->
+    <!-- =============================================== Change your code from here =====================================================-->
+    <h1>IP Addresses, Packet and Routing</h1>
+    <p>Okay, we had a talk about domain name and who manages it, now you know how you get the website when you click
+        “www.google.com” to you web browser. Now, we will go a little bit deeper into the internet world, we will
+        discover the true identity of the domain names – the IP address. </p>
+    <h2>What is the IP address?</h2>
+    <p>Okay, as its name, you must have figure it out that first of all it’s an address. But can you drive there? Well,
+        if you can, tell me. IP (Internet Protocol) Address is an address of your network hardware. It helps in
+        connecting your computer to other devices on your network and all over the world. An IP Address is made up of
+        numbers or characters.</p>
+    <ul>Examples of IP addresses:
+        <li>506.457.14.512</li>
+        <li>192.168.0.1</li>
+        <li>10.0.0.1</li>
+    </ul>
+    <h2>Structure of IP Address</h2>
+    <p>Your IP address at home will be different from the IP address at your work office. And that IP address will be
+        different from the one you would have if you used the free wireless hotspot at a coffee shop or hotel. But they
+        all have one thing in common: They will be in four sections, separated by three periods or dots. That is the
+        common structure for all IPv4 addresses (v4 stands for "version 4").</p>
+    <img src="image/ip.png">
+    <p>Depends on the type of the IP address, we have different structure, but the common thing is that they have the
+        network part and the host part. Unlike human, computers only understand binary numbers, therefore, the IP
+        address you see every day is the transformation of the binary number to decimal number. For IPv4, there are 32
+        bits which are divided into 4 parts, each part has 8 bits. The maximum number of IP for IPv4 is 232. Nowadays,
+        due to the needs of more IP addresses, a new version of IP address is used – IPv6, which uses 256 bits to
+        represent the IP address. </p>
+    <p>So how does your information transport from your computer to others? How do they know where to go and do they
+        have maps or vehicles to traffic? This used to be a very big problem for internet architectures, because of the
+        number of users and the transmission rate and distance. So, how? It will be really hard to transfer all of your
+        files in the internet at once, this’s not impossible but I would take a lot of time if you have to transfer
+        multiple files to multiple places.</p>
+    <h2>Packet</h2>
+    <p>In the internet, your data is chopped down to small packets which then will be transferred in the internet
+        traffic. A data packet, or network packet to be correct, is a collection name of several components. These
+        components are needed in order for you to be able to browse the web, for example. In order for you to go to a
+        website, you will need to send packets to the websites web server and that server will have to send packets back
+        to you. For this to work, a packet needs to hold several components:</p>
+    <ul>
+        <li>IP Addresses: First, the packet needs two addresses, the source address, and the destination address.</li>
+        <li>Hop Counts: number of hops a packet can do before dying.</li>
+        <li>Length: The length of the packet</li>
+        <li>Payload: The content</li>
+    </ul>
+    <p>As you know, this data packet will not just magically appear somewhere else, it needs to find the destination and
+        then get there. </p>
+    <h2>Routing</h2>
+    <p>For the package to know where to go, something called routing will be used. This is essentially just your local
+        post office carrying out post. The mailman looks at the zip code, then the address, then the house number and
+        then the name, and data packets do the same thing. How the data is being transmitted is through cables. It might
+        start off as a package on your mobile phone and
+        will wirelessly be transferred to your router. Once the router has received the signals from your phone, the
+        packet will continue through cables, from your router and out to the world wide web. Your house is most likely
+        connected to the grid in your city. The packet has its address written on it and will go where the signs are
+        pointing.
+    </p>
+    <p>
+        In packet switching networks, routing is the higher-level decision making that directs network packets from
+        their source toward their destination through intermediate network nodes by specific packet forwarding
+        mechanisms. Packet forwarding is the transit of network packets from one network interface to another.
+        Intermediate nodes are typically network hardware devices such as routers, gateways, firewalls, or switches.
+        General-purpose computers also forward packets and perform routing, although they have no specially optimized
+        hardware for the task.
+    </p>
+    <img src="image/routing.png">
+    <p>Routers work in the following way: when a router receives a packet, it reads the headers of the packet to see
+        its intended destination, like the way a train conductor may check a passenger's tickets to determine which
+        train they should go on. It then determines where to route the packet based on information in its routing
+        tables.</p>
+    <!-- ================================================= To here ======================================================================-->
+    <!-- ====================================================================================================================================-->
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+            <div class="col-12 col-md">
+                <img class="mb-2" src="./image/code.jpg" alt="" width="24" height="24">
+                <small class="d-block mb-3 text-muted">&copy; 2020</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Khang Tran</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Email: kt36@njit.edu</a></li>
+                    <li><a class="text-muted" href="https://www.linkedin.com/in/khangtran16/">Linked in</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Sahaj Vaidya</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Email: ssv47@njit.edu</a></li>
+                    <li><a class="text-muted" href="https://www.linkedin.com/in/sahaj-vaidya-80624b129/">Linked in</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+</html>
