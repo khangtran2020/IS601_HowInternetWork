@@ -76,14 +76,20 @@
     <p>Each device connected to the Internet has a unique IP address which other machines use to find the device. DNS
         servers eliminate the need for humans to memorize IP addresses such as 192.168.1.1 (in IPv4), or more complex
         newer alphanumeric IP addresses such as 2400:cb00:2048:1::c629:d7a2 (in IPv6).</p>
-    <img src="image/dns.png">
+    <figure>
+        <img src="image/dns.png" alt="DNS">
+        <figcaption>Fig.1 - The DNS server</figcaption>
+    </figure>
     <h2>How does DNS work?</h2>
     <p>The process of DNS resolution involves converting a hostname (such as www.example.com) into a computer-friendly
         IP address (such as 192.168.1.1). An IP address is given to each device on the Internet, and that address is
         necessary to find the appropriate Internet device - like a street address is used to find a particular home.
         When a user wants to load a webpage, a translation must occur between what a user types into their web browser
         (example.com) and the machine-friendly address necessary to locate the example.com webpage.</p>
-    <img src="image/dnswork.png">
+    <figure>
+        <img src="image/dnswork.png" alt="How DNS work">
+        <figcaption>Fig.2- multiple DNS servers and how the DNS find the IP address for a specific domain name</figcaption>
+    </figure>
     <p>Let’s put that all together. When you query a domain name your first step won’t actually be at the root name
         servers. Instead, your browser will ask your local resolving name server if they have the DNS records for that
         domain cached.</p>
@@ -95,7 +101,10 @@
         information. TTL’s can range anywhere from 30 seconds to a week.</p>
     <p>What if the record we are looking for isn’t cached? Then the resolving name server will ask the root name servers
         for the TLD for that domain, which will point you to the provider authoritative for hosting the records.</p>
-    <img src="image/dnscycle.png">
+    <figure>
+        <img src="image/dnscycle.png" alt="The Cycle of the DNS searching">
+        <figcaption>Fig.3 - The cycle of a searching process of the DNS</figcaption>
+    </figure>
     <p>Okay, that was a lot of steps to go through just to find the IP address. Oh, and by the way, this process happens
         in just a couple milliseconds. A little perspective, you blink your eye in roughly 50 milliseconds. You can
         resolve most DNS queries in under 30.</p>
